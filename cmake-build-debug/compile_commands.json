@@ -1,0 +1,237 @@
+[
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch -I/Users/nika/ead-221-Nika-Prokudina-nika/util  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o CMakeFiles/contrib_catch_main.dir/contrib/catch/catch_main.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch/catch_main.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch/catch_main.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/multiplication -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/multiplication/CMakeFiles/test_multiplication.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/multiplication/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/multiplication/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/multiplication -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/multiplication/CMakeFiles/test_multiplication.dir/multiplication.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/multiplication/multiplication.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/multiplication/multiplication.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/associative_operation -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/associative_operation/CMakeFiles/test_associative_operation.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/associative_operation/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/associative_operation/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/associative_operation -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/associative_operation/CMakeFiles/test_associative_operation.dir/associative_operation.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/associative_operation/associative_operation.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/associative_operation/associative_operation.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/palindrome -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/palindrome/CMakeFiles/test_palindrome.dir/palindrome.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/palindrome/palindrome.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/palindrome/palindrome.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/palindrome -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/palindrome/CMakeFiles/test_palindrome.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/palindrome/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/palindrome/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/password -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/password/CMakeFiles/test_password.dir/password.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/password/password.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/password/password.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/password -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/password/CMakeFiles/test_password.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/password/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/password/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/sort_students -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/sort_students/CMakeFiles/test_sort_students.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/sort_students/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/sort_students/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/sort_students -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/sort_students/CMakeFiles/test_sort_students.dir/sort_students.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/sort_students/sort_students.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/sort_students/sort_students.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/admission -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/admission/CMakeFiles/test_admission.dir/admission.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/admission/admission.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/admission/admission.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/admission -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/admission/CMakeFiles/test_admission.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/admission/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/admission/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/scorer/CMakeFiles/test_scorer.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/scorer/CMakeFiles/test_scorer.dir/scorer.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer/scorer.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer/scorer.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/search -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/search/CMakeFiles/test_search.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/search/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/search/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/search -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/search/CMakeFiles/test_search.dir/search.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/search/search.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/search/search.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/tests_checking -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/tests_checking/CMakeFiles/test_tests_checking.dir/tests_checking.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/tests_checking/tests_checking.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/tests_checking/tests_checking.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/tests_checking -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/tests_checking/CMakeFiles/test_tests_checking.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/tests_checking/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/tests_checking/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/unixpath/CMakeFiles/test_unixpath.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/unixpath/CMakeFiles/test_unixpath.dir/unixpath.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath/unixpath.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath/unixpath.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/word2vec -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/word2vec/CMakeFiles/test_word2vec.dir/word2vec.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/word2vec/word2vec.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/word2vec/word2vec.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/word2vec -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/word2vec/CMakeFiles/test_word2vec.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/word2vec/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/word2vec/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/mines -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/mines/CMakeFiles/test_minesweeper.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/mines/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/mines/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/mines -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/mines/CMakeFiles/test_minesweeper.dir/minesweeper.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/mines/minesweeper.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/mines/minesweeper.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer2 -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/scorer2/CMakeFiles/test_scorer2.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer2/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer2/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer2 -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/scorer2/CMakeFiles/test_scorer2.dir/scorer.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer2/scorer.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer2/scorer.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/search2 -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/search2/CMakeFiles/test_search2.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/search2/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/search2/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/search2 -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/search2/CMakeFiles/test_search2.dir/search.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/search2/search.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/search2/search.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath2 -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/unixpath2/CMakeFiles/test_unixpath2.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath2/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath2/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath2 -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/unixpath2/CMakeFiles/test_unixpath2.dir/unixpath.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath2/unixpath.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath2/unixpath.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/cow -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/cow/CMakeFiles/test_cow.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/cow/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/cow/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/cow -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/cow/CMakeFiles/test_cow.dir/cow_string.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/cow/cow_string.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/cow/cow_string.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/poly -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/poly/CMakeFiles/test_poly.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/poly/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/poly/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/poly -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/poly/CMakeFiles/test_poly.dir/poly.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/poly/poly.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/poly/poly.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/robot/CMakeFiles/test_robot.dir/checkers_topology.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/checkers_topology.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/checkers_topology.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/robot/CMakeFiles/test_robot.dir/knight_topology.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/knight_topology.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/knight_topology.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/robot/CMakeFiles/test_robot.dir/overflow_topology.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/overflow_topology.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/overflow_topology.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/robot/CMakeFiles/test_robot.dir/planar_topology.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/planar_topology.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/planar_topology.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/robot/CMakeFiles/test_robot.dir/robot.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/robot.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/robot.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/robot/CMakeFiles/test_robot.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/robot/CMakeFiles/test_robot.dir/topology.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/topology.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/topology.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/robot/CMakeFiles/test_robot.dir/world.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/world.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/world.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/zip2 -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/zip2/CMakeFiles/test_zip2.dir/test.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/zip2/test.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/zip2/test.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/image_processor/CMakeFiles/image_processor.dir/image_processor.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/image_processor/image_processor.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/image_processor/image_processor.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/image_processor/CMakeFiles/image_processor.dir/image.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/image_processor/image.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/image_processor/image.cpp"
+},
+{
+  "directory": "/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/nika/ead-221-Nika-Prokudina-nika/util  -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20 -o tasks/image_processor/CMakeFiles/image_processor.dir/util.cpp.o -c /Users/nika/ead-221-Nika-Prokudina-nika/tasks/image_processor/util.cpp",
+  "file": "/Users/nika/ead-221-Nika-Prokudina-nika/tasks/image_processor/util.cpp"
+}
+]

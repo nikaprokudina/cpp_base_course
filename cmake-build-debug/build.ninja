@@ -1,0 +1,1690 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: cpp-hse
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/
+
+#############################################
+# Utility command for test-all
+
+build test-all: phony
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target contrib_catch_main
+
+
+#############################################
+# Order-only phony target for contrib_catch_main
+
+build cmake_object_order_depends_target_contrib_catch_main: phony || CMakeFiles/contrib_catch_main.dir
+
+build CMakeFiles/contrib_catch_main.dir/contrib/catch/catch_main.cpp.o: CXX_COMPILER__contrib_catch_main_Debug /Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch/catch_main.cpp || cmake_object_order_depends_target_contrib_catch_main
+  DEP_FILE = CMakeFiles/contrib_catch_main.dir/contrib/catch/catch_main.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch -I/Users/nika/ead-221-Nika-Prokudina-nika/util
+  OBJECT_DIR = CMakeFiles/contrib_catch_main.dir
+  OBJECT_FILE_DIR = CMakeFiles/contrib_catch_main.dir/contrib/catch
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target contrib_catch_main
+
+
+#############################################
+# Link the static library libcontrib_catch_main.a
+
+build libcontrib_catch_main.a: CXX_STATIC_LIBRARY_LINKER__contrib_catch_main_Debug CMakeFiles/contrib_catch_main.dir/contrib/catch/catch_main.cpp.o
+  ARCH_FLAGS = -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LANGUAGE_COMPILE_FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g
+  OBJECT_DIR = CMakeFiles/contrib_catch_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libcontrib_catch_main.a
+  TARGET_PDB = contrib_catch_main.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_multiplication
+
+
+#############################################
+# Order-only phony target for test_multiplication
+
+build cmake_object_order_depends_target_test_multiplication: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/multiplication/CMakeFiles/test_multiplication.dir/test.cpp.o: CXX_COMPILER__test_multiplication_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/multiplication/test.cpp || cmake_object_order_depends_target_test_multiplication
+  DEP_FILE = tasks/multiplication/CMakeFiles/test_multiplication.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/multiplication -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/multiplication/CMakeFiles/test_multiplication.dir
+  OBJECT_FILE_DIR = tasks/multiplication/CMakeFiles/test_multiplication.dir
+
+build tasks/multiplication/CMakeFiles/test_multiplication.dir/multiplication.cpp.o: CXX_COMPILER__test_multiplication_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/multiplication/multiplication.cpp || cmake_object_order_depends_target_test_multiplication
+  DEP_FILE = tasks/multiplication/CMakeFiles/test_multiplication.dir/multiplication.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/multiplication -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/multiplication/CMakeFiles/test_multiplication.dir
+  OBJECT_FILE_DIR = tasks/multiplication/CMakeFiles/test_multiplication.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_multiplication
+
+
+#############################################
+# Link the executable test_multiplication
+
+build test_multiplication: CXX_EXECUTABLE_LINKER__test_multiplication_Debug tasks/multiplication/CMakeFiles/test_multiplication.dir/test.cpp.o tasks/multiplication/CMakeFiles/test_multiplication.dir/multiplication.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/multiplication/CMakeFiles/test_multiplication.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_multiplication
+  TARGET_PDB = test_multiplication.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/multiplication/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/multiplication && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/multiplication/edit_cache: phony tasks/multiplication/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/multiplication/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/multiplication && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/multiplication/rebuild_cache: phony tasks/multiplication/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_associative_operation
+
+
+#############################################
+# Order-only phony target for test_associative_operation
+
+build cmake_object_order_depends_target_test_associative_operation: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/associative_operation/CMakeFiles/test_associative_operation.dir/test.cpp.o: CXX_COMPILER__test_associative_operation_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/associative_operation/test.cpp || cmake_object_order_depends_target_test_associative_operation
+  DEP_FILE = tasks/associative_operation/CMakeFiles/test_associative_operation.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/associative_operation -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/associative_operation/CMakeFiles/test_associative_operation.dir
+  OBJECT_FILE_DIR = tasks/associative_operation/CMakeFiles/test_associative_operation.dir
+
+build tasks/associative_operation/CMakeFiles/test_associative_operation.dir/associative_operation.cpp.o: CXX_COMPILER__test_associative_operation_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/associative_operation/associative_operation.cpp || cmake_object_order_depends_target_test_associative_operation
+  DEP_FILE = tasks/associative_operation/CMakeFiles/test_associative_operation.dir/associative_operation.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/associative_operation -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/associative_operation/CMakeFiles/test_associative_operation.dir
+  OBJECT_FILE_DIR = tasks/associative_operation/CMakeFiles/test_associative_operation.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_associative_operation
+
+
+#############################################
+# Link the executable test_associative_operation
+
+build test_associative_operation: CXX_EXECUTABLE_LINKER__test_associative_operation_Debug tasks/associative_operation/CMakeFiles/test_associative_operation.dir/test.cpp.o tasks/associative_operation/CMakeFiles/test_associative_operation.dir/associative_operation.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/associative_operation/CMakeFiles/test_associative_operation.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_associative_operation
+  TARGET_PDB = test_associative_operation.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/associative_operation/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/associative_operation && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/associative_operation/edit_cache: phony tasks/associative_operation/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/associative_operation/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/associative_operation && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/associative_operation/rebuild_cache: phony tasks/associative_operation/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_palindrome
+
+
+#############################################
+# Order-only phony target for test_palindrome
+
+build cmake_object_order_depends_target_test_palindrome: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/palindrome/CMakeFiles/test_palindrome.dir/palindrome.cpp.o: CXX_COMPILER__test_palindrome_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/palindrome/palindrome.cpp || cmake_object_order_depends_target_test_palindrome
+  DEP_FILE = tasks/palindrome/CMakeFiles/test_palindrome.dir/palindrome.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/palindrome -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/palindrome/CMakeFiles/test_palindrome.dir
+  OBJECT_FILE_DIR = tasks/palindrome/CMakeFiles/test_palindrome.dir
+
+build tasks/palindrome/CMakeFiles/test_palindrome.dir/test.cpp.o: CXX_COMPILER__test_palindrome_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/palindrome/test.cpp || cmake_object_order_depends_target_test_palindrome
+  DEP_FILE = tasks/palindrome/CMakeFiles/test_palindrome.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/palindrome -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/palindrome/CMakeFiles/test_palindrome.dir
+  OBJECT_FILE_DIR = tasks/palindrome/CMakeFiles/test_palindrome.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_palindrome
+
+
+#############################################
+# Link the executable test_palindrome
+
+build test_palindrome: CXX_EXECUTABLE_LINKER__test_palindrome_Debug tasks/palindrome/CMakeFiles/test_palindrome.dir/palindrome.cpp.o tasks/palindrome/CMakeFiles/test_palindrome.dir/test.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/palindrome/CMakeFiles/test_palindrome.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_palindrome
+  TARGET_PDB = test_palindrome.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/palindrome/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/palindrome && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/palindrome/edit_cache: phony tasks/palindrome/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/palindrome/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/palindrome && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/palindrome/rebuild_cache: phony tasks/palindrome/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_password
+
+
+#############################################
+# Order-only phony target for test_password
+
+build cmake_object_order_depends_target_test_password: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/password/CMakeFiles/test_password.dir/password.cpp.o: CXX_COMPILER__test_password_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/password/password.cpp || cmake_object_order_depends_target_test_password
+  DEP_FILE = tasks/password/CMakeFiles/test_password.dir/password.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/password -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/password/CMakeFiles/test_password.dir
+  OBJECT_FILE_DIR = tasks/password/CMakeFiles/test_password.dir
+
+build tasks/password/CMakeFiles/test_password.dir/test.cpp.o: CXX_COMPILER__test_password_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/password/test.cpp || cmake_object_order_depends_target_test_password
+  DEP_FILE = tasks/password/CMakeFiles/test_password.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/password -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/password/CMakeFiles/test_password.dir
+  OBJECT_FILE_DIR = tasks/password/CMakeFiles/test_password.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_password
+
+
+#############################################
+# Link the executable test_password
+
+build test_password: CXX_EXECUTABLE_LINKER__test_password_Debug tasks/password/CMakeFiles/test_password.dir/password.cpp.o tasks/password/CMakeFiles/test_password.dir/test.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/password/CMakeFiles/test_password.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_password
+  TARGET_PDB = test_password.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/password/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/password && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/password/edit_cache: phony tasks/password/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/password/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/password && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/password/rebuild_cache: phony tasks/password/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_sort_students
+
+
+#############################################
+# Order-only phony target for test_sort_students
+
+build cmake_object_order_depends_target_test_sort_students: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/sort_students/CMakeFiles/test_sort_students.dir/test.cpp.o: CXX_COMPILER__test_sort_students_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/sort_students/test.cpp || cmake_object_order_depends_target_test_sort_students
+  DEP_FILE = tasks/sort_students/CMakeFiles/test_sort_students.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/sort_students -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/sort_students/CMakeFiles/test_sort_students.dir
+  OBJECT_FILE_DIR = tasks/sort_students/CMakeFiles/test_sort_students.dir
+
+build tasks/sort_students/CMakeFiles/test_sort_students.dir/sort_students.cpp.o: CXX_COMPILER__test_sort_students_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/sort_students/sort_students.cpp || cmake_object_order_depends_target_test_sort_students
+  DEP_FILE = tasks/sort_students/CMakeFiles/test_sort_students.dir/sort_students.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/sort_students -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/sort_students/CMakeFiles/test_sort_students.dir
+  OBJECT_FILE_DIR = tasks/sort_students/CMakeFiles/test_sort_students.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_sort_students
+
+
+#############################################
+# Link the executable test_sort_students
+
+build test_sort_students: CXX_EXECUTABLE_LINKER__test_sort_students_Debug tasks/sort_students/CMakeFiles/test_sort_students.dir/test.cpp.o tasks/sort_students/CMakeFiles/test_sort_students.dir/sort_students.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/sort_students/CMakeFiles/test_sort_students.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_sort_students
+  TARGET_PDB = test_sort_students.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/sort_students/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/sort_students && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/sort_students/edit_cache: phony tasks/sort_students/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/sort_students/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/sort_students && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/sort_students/rebuild_cache: phony tasks/sort_students/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_admission
+
+
+#############################################
+# Order-only phony target for test_admission
+
+build cmake_object_order_depends_target_test_admission: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/admission/CMakeFiles/test_admission.dir/admission.cpp.o: CXX_COMPILER__test_admission_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/admission/admission.cpp || cmake_object_order_depends_target_test_admission
+  DEP_FILE = tasks/admission/CMakeFiles/test_admission.dir/admission.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/admission -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/admission/CMakeFiles/test_admission.dir
+  OBJECT_FILE_DIR = tasks/admission/CMakeFiles/test_admission.dir
+
+build tasks/admission/CMakeFiles/test_admission.dir/test.cpp.o: CXX_COMPILER__test_admission_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/admission/test.cpp || cmake_object_order_depends_target_test_admission
+  DEP_FILE = tasks/admission/CMakeFiles/test_admission.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/admission -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/admission/CMakeFiles/test_admission.dir
+  OBJECT_FILE_DIR = tasks/admission/CMakeFiles/test_admission.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_admission
+
+
+#############################################
+# Link the executable test_admission
+
+build test_admission: CXX_EXECUTABLE_LINKER__test_admission_Debug tasks/admission/CMakeFiles/test_admission.dir/admission.cpp.o tasks/admission/CMakeFiles/test_admission.dir/test.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/admission/CMakeFiles/test_admission.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_admission
+  TARGET_PDB = test_admission.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/admission/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/admission && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/admission/edit_cache: phony tasks/admission/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/admission/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/admission && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/admission/rebuild_cache: phony tasks/admission/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_scorer
+
+
+#############################################
+# Order-only phony target for test_scorer
+
+build cmake_object_order_depends_target_test_scorer: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/scorer/CMakeFiles/test_scorer.dir/test.cpp.o: CXX_COMPILER__test_scorer_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer/test.cpp || cmake_object_order_depends_target_test_scorer
+  DEP_FILE = tasks/scorer/CMakeFiles/test_scorer.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/scorer/CMakeFiles/test_scorer.dir
+  OBJECT_FILE_DIR = tasks/scorer/CMakeFiles/test_scorer.dir
+
+build tasks/scorer/CMakeFiles/test_scorer.dir/scorer.cpp.o: CXX_COMPILER__test_scorer_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer/scorer.cpp || cmake_object_order_depends_target_test_scorer
+  DEP_FILE = tasks/scorer/CMakeFiles/test_scorer.dir/scorer.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/scorer/CMakeFiles/test_scorer.dir
+  OBJECT_FILE_DIR = tasks/scorer/CMakeFiles/test_scorer.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_scorer
+
+
+#############################################
+# Link the executable test_scorer
+
+build test_scorer: CXX_EXECUTABLE_LINKER__test_scorer_Debug tasks/scorer/CMakeFiles/test_scorer.dir/test.cpp.o tasks/scorer/CMakeFiles/test_scorer.dir/scorer.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/scorer/CMakeFiles/test_scorer.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_scorer
+  TARGET_PDB = test_scorer.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/scorer/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/scorer && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/scorer/edit_cache: phony tasks/scorer/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/scorer/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/scorer && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/scorer/rebuild_cache: phony tasks/scorer/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_search
+
+
+#############################################
+# Order-only phony target for test_search
+
+build cmake_object_order_depends_target_test_search: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/search/CMakeFiles/test_search.dir/test.cpp.o: CXX_COMPILER__test_search_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/search/test.cpp || cmake_object_order_depends_target_test_search
+  DEP_FILE = tasks/search/CMakeFiles/test_search.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/search -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/search/CMakeFiles/test_search.dir
+  OBJECT_FILE_DIR = tasks/search/CMakeFiles/test_search.dir
+
+build tasks/search/CMakeFiles/test_search.dir/search.cpp.o: CXX_COMPILER__test_search_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/search/search.cpp || cmake_object_order_depends_target_test_search
+  DEP_FILE = tasks/search/CMakeFiles/test_search.dir/search.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/search -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/search/CMakeFiles/test_search.dir
+  OBJECT_FILE_DIR = tasks/search/CMakeFiles/test_search.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_search
+
+
+#############################################
+# Link the executable test_search
+
+build test_search: CXX_EXECUTABLE_LINKER__test_search_Debug tasks/search/CMakeFiles/test_search.dir/test.cpp.o tasks/search/CMakeFiles/test_search.dir/search.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/search/CMakeFiles/test_search.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_search
+  TARGET_PDB = test_search.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/search/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/search && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/search/edit_cache: phony tasks/search/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/search/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/search && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/search/rebuild_cache: phony tasks/search/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_tests_checking
+
+
+#############################################
+# Order-only phony target for test_tests_checking
+
+build cmake_object_order_depends_target_test_tests_checking: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/tests_checking/CMakeFiles/test_tests_checking.dir/tests_checking.cpp.o: CXX_COMPILER__test_tests_checking_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/tests_checking/tests_checking.cpp || cmake_object_order_depends_target_test_tests_checking
+  DEP_FILE = tasks/tests_checking/CMakeFiles/test_tests_checking.dir/tests_checking.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/tests_checking -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/tests_checking/CMakeFiles/test_tests_checking.dir
+  OBJECT_FILE_DIR = tasks/tests_checking/CMakeFiles/test_tests_checking.dir
+
+build tasks/tests_checking/CMakeFiles/test_tests_checking.dir/test.cpp.o: CXX_COMPILER__test_tests_checking_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/tests_checking/test.cpp || cmake_object_order_depends_target_test_tests_checking
+  DEP_FILE = tasks/tests_checking/CMakeFiles/test_tests_checking.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/tests_checking -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/tests_checking/CMakeFiles/test_tests_checking.dir
+  OBJECT_FILE_DIR = tasks/tests_checking/CMakeFiles/test_tests_checking.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_tests_checking
+
+
+#############################################
+# Link the executable test_tests_checking
+
+build test_tests_checking: CXX_EXECUTABLE_LINKER__test_tests_checking_Debug tasks/tests_checking/CMakeFiles/test_tests_checking.dir/tests_checking.cpp.o tasks/tests_checking/CMakeFiles/test_tests_checking.dir/test.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/tests_checking/CMakeFiles/test_tests_checking.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_tests_checking
+  TARGET_PDB = test_tests_checking.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/tests_checking/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/tests_checking && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/tests_checking/edit_cache: phony tasks/tests_checking/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/tests_checking/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/tests_checking && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/tests_checking/rebuild_cache: phony tasks/tests_checking/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_unixpath
+
+
+#############################################
+# Order-only phony target for test_unixpath
+
+build cmake_object_order_depends_target_test_unixpath: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/unixpath/CMakeFiles/test_unixpath.dir/test.cpp.o: CXX_COMPILER__test_unixpath_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath/test.cpp || cmake_object_order_depends_target_test_unixpath
+  DEP_FILE = tasks/unixpath/CMakeFiles/test_unixpath.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/unixpath/CMakeFiles/test_unixpath.dir
+  OBJECT_FILE_DIR = tasks/unixpath/CMakeFiles/test_unixpath.dir
+
+build tasks/unixpath/CMakeFiles/test_unixpath.dir/unixpath.cpp.o: CXX_COMPILER__test_unixpath_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath/unixpath.cpp || cmake_object_order_depends_target_test_unixpath
+  DEP_FILE = tasks/unixpath/CMakeFiles/test_unixpath.dir/unixpath.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/unixpath/CMakeFiles/test_unixpath.dir
+  OBJECT_FILE_DIR = tasks/unixpath/CMakeFiles/test_unixpath.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_unixpath
+
+
+#############################################
+# Link the executable test_unixpath
+
+build test_unixpath: CXX_EXECUTABLE_LINKER__test_unixpath_Debug tasks/unixpath/CMakeFiles/test_unixpath.dir/test.cpp.o tasks/unixpath/CMakeFiles/test_unixpath.dir/unixpath.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/unixpath/CMakeFiles/test_unixpath.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_unixpath
+  TARGET_PDB = test_unixpath.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/unixpath/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/unixpath && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/unixpath/edit_cache: phony tasks/unixpath/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/unixpath/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/unixpath && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/unixpath/rebuild_cache: phony tasks/unixpath/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_word2vec
+
+
+#############################################
+# Order-only phony target for test_word2vec
+
+build cmake_object_order_depends_target_test_word2vec: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/word2vec/CMakeFiles/test_word2vec.dir/word2vec.cpp.o: CXX_COMPILER__test_word2vec_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/word2vec/word2vec.cpp || cmake_object_order_depends_target_test_word2vec
+  DEP_FILE = tasks/word2vec/CMakeFiles/test_word2vec.dir/word2vec.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/word2vec -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/word2vec/CMakeFiles/test_word2vec.dir
+  OBJECT_FILE_DIR = tasks/word2vec/CMakeFiles/test_word2vec.dir
+
+build tasks/word2vec/CMakeFiles/test_word2vec.dir/test.cpp.o: CXX_COMPILER__test_word2vec_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/word2vec/test.cpp || cmake_object_order_depends_target_test_word2vec
+  DEP_FILE = tasks/word2vec/CMakeFiles/test_word2vec.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/word2vec -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/word2vec/CMakeFiles/test_word2vec.dir
+  OBJECT_FILE_DIR = tasks/word2vec/CMakeFiles/test_word2vec.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_word2vec
+
+
+#############################################
+# Link the executable test_word2vec
+
+build test_word2vec: CXX_EXECUTABLE_LINKER__test_word2vec_Debug tasks/word2vec/CMakeFiles/test_word2vec.dir/word2vec.cpp.o tasks/word2vec/CMakeFiles/test_word2vec.dir/test.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/word2vec/CMakeFiles/test_word2vec.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_word2vec
+  TARGET_PDB = test_word2vec.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/word2vec/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/word2vec && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/word2vec/edit_cache: phony tasks/word2vec/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/word2vec/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/word2vec && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/word2vec/rebuild_cache: phony tasks/word2vec/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_minesweeper
+
+
+#############################################
+# Order-only phony target for test_minesweeper
+
+build cmake_object_order_depends_target_test_minesweeper: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/mines/CMakeFiles/test_minesweeper.dir/test.cpp.o: CXX_COMPILER__test_minesweeper_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/mines/test.cpp || cmake_object_order_depends_target_test_minesweeper
+  DEP_FILE = tasks/mines/CMakeFiles/test_minesweeper.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/mines -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/mines/CMakeFiles/test_minesweeper.dir
+  OBJECT_FILE_DIR = tasks/mines/CMakeFiles/test_minesweeper.dir
+
+build tasks/mines/CMakeFiles/test_minesweeper.dir/minesweeper.cpp.o: CXX_COMPILER__test_minesweeper_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/mines/minesweeper.cpp || cmake_object_order_depends_target_test_minesweeper
+  DEP_FILE = tasks/mines/CMakeFiles/test_minesweeper.dir/minesweeper.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/mines -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/mines/CMakeFiles/test_minesweeper.dir
+  OBJECT_FILE_DIR = tasks/mines/CMakeFiles/test_minesweeper.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_minesweeper
+
+
+#############################################
+# Link the executable test_minesweeper
+
+build test_minesweeper: CXX_EXECUTABLE_LINKER__test_minesweeper_Debug tasks/mines/CMakeFiles/test_minesweeper.dir/test.cpp.o tasks/mines/CMakeFiles/test_minesweeper.dir/minesweeper.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/mines/CMakeFiles/test_minesweeper.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_minesweeper
+  TARGET_PDB = test_minesweeper.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/mines/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/mines && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/mines/edit_cache: phony tasks/mines/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/mines/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/mines && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/mines/rebuild_cache: phony tasks/mines/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_scorer2
+
+
+#############################################
+# Order-only phony target for test_scorer2
+
+build cmake_object_order_depends_target_test_scorer2: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/scorer2/CMakeFiles/test_scorer2.dir/test.cpp.o: CXX_COMPILER__test_scorer2_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer2/test.cpp || cmake_object_order_depends_target_test_scorer2
+  DEP_FILE = tasks/scorer2/CMakeFiles/test_scorer2.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer2 -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/scorer2/CMakeFiles/test_scorer2.dir
+  OBJECT_FILE_DIR = tasks/scorer2/CMakeFiles/test_scorer2.dir
+
+build tasks/scorer2/CMakeFiles/test_scorer2.dir/scorer.cpp.o: CXX_COMPILER__test_scorer2_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer2/scorer.cpp || cmake_object_order_depends_target_test_scorer2
+  DEP_FILE = tasks/scorer2/CMakeFiles/test_scorer2.dir/scorer.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer2 -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/scorer2/CMakeFiles/test_scorer2.dir
+  OBJECT_FILE_DIR = tasks/scorer2/CMakeFiles/test_scorer2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_scorer2
+
+
+#############################################
+# Link the executable test_scorer2
+
+build test_scorer2: CXX_EXECUTABLE_LINKER__test_scorer2_Debug tasks/scorer2/CMakeFiles/test_scorer2.dir/test.cpp.o tasks/scorer2/CMakeFiles/test_scorer2.dir/scorer.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/scorer2/CMakeFiles/test_scorer2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_scorer2
+  TARGET_PDB = test_scorer2.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/scorer2/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/scorer2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/scorer2/edit_cache: phony tasks/scorer2/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/scorer2/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/scorer2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/scorer2/rebuild_cache: phony tasks/scorer2/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_search2
+
+
+#############################################
+# Order-only phony target for test_search2
+
+build cmake_object_order_depends_target_test_search2: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/search2/CMakeFiles/test_search2.dir/test.cpp.o: CXX_COMPILER__test_search2_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/search2/test.cpp || cmake_object_order_depends_target_test_search2
+  DEP_FILE = tasks/search2/CMakeFiles/test_search2.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/search2 -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/search2/CMakeFiles/test_search2.dir
+  OBJECT_FILE_DIR = tasks/search2/CMakeFiles/test_search2.dir
+
+build tasks/search2/CMakeFiles/test_search2.dir/search.cpp.o: CXX_COMPILER__test_search2_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/search2/search.cpp || cmake_object_order_depends_target_test_search2
+  DEP_FILE = tasks/search2/CMakeFiles/test_search2.dir/search.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/search2 -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/search2/CMakeFiles/test_search2.dir
+  OBJECT_FILE_DIR = tasks/search2/CMakeFiles/test_search2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_search2
+
+
+#############################################
+# Link the executable test_search2
+
+build test_search2: CXX_EXECUTABLE_LINKER__test_search2_Debug tasks/search2/CMakeFiles/test_search2.dir/test.cpp.o tasks/search2/CMakeFiles/test_search2.dir/search.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/search2/CMakeFiles/test_search2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_search2
+  TARGET_PDB = test_search2.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/search2/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/search2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/search2/edit_cache: phony tasks/search2/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/search2/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/search2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/search2/rebuild_cache: phony tasks/search2/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_unixpath2
+
+
+#############################################
+# Order-only phony target for test_unixpath2
+
+build cmake_object_order_depends_target_test_unixpath2: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/unixpath2/CMakeFiles/test_unixpath2.dir/test.cpp.o: CXX_COMPILER__test_unixpath2_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath2/test.cpp || cmake_object_order_depends_target_test_unixpath2
+  DEP_FILE = tasks/unixpath2/CMakeFiles/test_unixpath2.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath2 -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/unixpath2/CMakeFiles/test_unixpath2.dir
+  OBJECT_FILE_DIR = tasks/unixpath2/CMakeFiles/test_unixpath2.dir
+
+build tasks/unixpath2/CMakeFiles/test_unixpath2.dir/unixpath.cpp.o: CXX_COMPILER__test_unixpath2_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath2/unixpath.cpp || cmake_object_order_depends_target_test_unixpath2
+  DEP_FILE = tasks/unixpath2/CMakeFiles/test_unixpath2.dir/unixpath.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath2 -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/unixpath2/CMakeFiles/test_unixpath2.dir
+  OBJECT_FILE_DIR = tasks/unixpath2/CMakeFiles/test_unixpath2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_unixpath2
+
+
+#############################################
+# Link the executable test_unixpath2
+
+build test_unixpath2: CXX_EXECUTABLE_LINKER__test_unixpath2_Debug tasks/unixpath2/CMakeFiles/test_unixpath2.dir/test.cpp.o tasks/unixpath2/CMakeFiles/test_unixpath2.dir/unixpath.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/unixpath2/CMakeFiles/test_unixpath2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_unixpath2
+  TARGET_PDB = test_unixpath2.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/unixpath2/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/unixpath2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/unixpath2/edit_cache: phony tasks/unixpath2/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/unixpath2/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/unixpath2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/unixpath2/rebuild_cache: phony tasks/unixpath2/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_cow
+
+
+#############################################
+# Order-only phony target for test_cow
+
+build cmake_object_order_depends_target_test_cow: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/cow/CMakeFiles/test_cow.dir/test.cpp.o: CXX_COMPILER__test_cow_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/cow/test.cpp || cmake_object_order_depends_target_test_cow
+  DEP_FILE = tasks/cow/CMakeFiles/test_cow.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/cow -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/cow/CMakeFiles/test_cow.dir
+  OBJECT_FILE_DIR = tasks/cow/CMakeFiles/test_cow.dir
+
+build tasks/cow/CMakeFiles/test_cow.dir/cow_string.cpp.o: CXX_COMPILER__test_cow_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/cow/cow_string.cpp || cmake_object_order_depends_target_test_cow
+  DEP_FILE = tasks/cow/CMakeFiles/test_cow.dir/cow_string.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/cow -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/cow/CMakeFiles/test_cow.dir
+  OBJECT_FILE_DIR = tasks/cow/CMakeFiles/test_cow.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_cow
+
+
+#############################################
+# Link the executable test_cow
+
+build test_cow: CXX_EXECUTABLE_LINKER__test_cow_Debug tasks/cow/CMakeFiles/test_cow.dir/test.cpp.o tasks/cow/CMakeFiles/test_cow.dir/cow_string.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/cow/CMakeFiles/test_cow.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_cow
+  TARGET_PDB = test_cow.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/cow/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/cow && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/cow/edit_cache: phony tasks/cow/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/cow/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/cow && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/cow/rebuild_cache: phony tasks/cow/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_poly
+
+
+#############################################
+# Order-only phony target for test_poly
+
+build cmake_object_order_depends_target_test_poly: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/poly/CMakeFiles/test_poly.dir/test.cpp.o: CXX_COMPILER__test_poly_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/poly/test.cpp || cmake_object_order_depends_target_test_poly
+  DEP_FILE = tasks/poly/CMakeFiles/test_poly.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/poly -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/poly/CMakeFiles/test_poly.dir
+  OBJECT_FILE_DIR = tasks/poly/CMakeFiles/test_poly.dir
+
+build tasks/poly/CMakeFiles/test_poly.dir/poly.cpp.o: CXX_COMPILER__test_poly_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/poly/poly.cpp || cmake_object_order_depends_target_test_poly
+  DEP_FILE = tasks/poly/CMakeFiles/test_poly.dir/poly.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/poly -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/poly/CMakeFiles/test_poly.dir
+  OBJECT_FILE_DIR = tasks/poly/CMakeFiles/test_poly.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_poly
+
+
+#############################################
+# Link the executable test_poly
+
+build test_poly: CXX_EXECUTABLE_LINKER__test_poly_Debug tasks/poly/CMakeFiles/test_poly.dir/test.cpp.o tasks/poly/CMakeFiles/test_poly.dir/poly.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/poly/CMakeFiles/test_poly.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_poly
+  TARGET_PDB = test_poly.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/poly/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/poly && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/poly/edit_cache: phony tasks/poly/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/poly/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/poly && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/poly/rebuild_cache: phony tasks/poly/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_robot
+
+
+#############################################
+# Order-only phony target for test_robot
+
+build cmake_object_order_depends_target_test_robot: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/robot/CMakeFiles/test_robot.dir/checkers_topology.cpp.o: CXX_COMPILER__test_robot_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/checkers_topology.cpp || cmake_object_order_depends_target_test_robot
+  DEP_FILE = tasks/robot/CMakeFiles/test_robot.dir/checkers_topology.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/robot/CMakeFiles/test_robot.dir
+  OBJECT_FILE_DIR = tasks/robot/CMakeFiles/test_robot.dir
+
+build tasks/robot/CMakeFiles/test_robot.dir/knight_topology.cpp.o: CXX_COMPILER__test_robot_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/knight_topology.cpp || cmake_object_order_depends_target_test_robot
+  DEP_FILE = tasks/robot/CMakeFiles/test_robot.dir/knight_topology.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/robot/CMakeFiles/test_robot.dir
+  OBJECT_FILE_DIR = tasks/robot/CMakeFiles/test_robot.dir
+
+build tasks/robot/CMakeFiles/test_robot.dir/overflow_topology.cpp.o: CXX_COMPILER__test_robot_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/overflow_topology.cpp || cmake_object_order_depends_target_test_robot
+  DEP_FILE = tasks/robot/CMakeFiles/test_robot.dir/overflow_topology.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/robot/CMakeFiles/test_robot.dir
+  OBJECT_FILE_DIR = tasks/robot/CMakeFiles/test_robot.dir
+
+build tasks/robot/CMakeFiles/test_robot.dir/planar_topology.cpp.o: CXX_COMPILER__test_robot_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/planar_topology.cpp || cmake_object_order_depends_target_test_robot
+  DEP_FILE = tasks/robot/CMakeFiles/test_robot.dir/planar_topology.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/robot/CMakeFiles/test_robot.dir
+  OBJECT_FILE_DIR = tasks/robot/CMakeFiles/test_robot.dir
+
+build tasks/robot/CMakeFiles/test_robot.dir/robot.cpp.o: CXX_COMPILER__test_robot_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/robot.cpp || cmake_object_order_depends_target_test_robot
+  DEP_FILE = tasks/robot/CMakeFiles/test_robot.dir/robot.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/robot/CMakeFiles/test_robot.dir
+  OBJECT_FILE_DIR = tasks/robot/CMakeFiles/test_robot.dir
+
+build tasks/robot/CMakeFiles/test_robot.dir/test.cpp.o: CXX_COMPILER__test_robot_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/test.cpp || cmake_object_order_depends_target_test_robot
+  DEP_FILE = tasks/robot/CMakeFiles/test_robot.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/robot/CMakeFiles/test_robot.dir
+  OBJECT_FILE_DIR = tasks/robot/CMakeFiles/test_robot.dir
+
+build tasks/robot/CMakeFiles/test_robot.dir/topology.cpp.o: CXX_COMPILER__test_robot_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/topology.cpp || cmake_object_order_depends_target_test_robot
+  DEP_FILE = tasks/robot/CMakeFiles/test_robot.dir/topology.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/robot/CMakeFiles/test_robot.dir
+  OBJECT_FILE_DIR = tasks/robot/CMakeFiles/test_robot.dir
+
+build tasks/robot/CMakeFiles/test_robot.dir/world.cpp.o: CXX_COMPILER__test_robot_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/world.cpp || cmake_object_order_depends_target_test_robot
+  DEP_FILE = tasks/robot/CMakeFiles/test_robot.dir/world.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/robot/CMakeFiles/test_robot.dir
+  OBJECT_FILE_DIR = tasks/robot/CMakeFiles/test_robot.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_robot
+
+
+#############################################
+# Link the executable test_robot
+
+build test_robot: CXX_EXECUTABLE_LINKER__test_robot_Debug tasks/robot/CMakeFiles/test_robot.dir/checkers_topology.cpp.o tasks/robot/CMakeFiles/test_robot.dir/knight_topology.cpp.o tasks/robot/CMakeFiles/test_robot.dir/overflow_topology.cpp.o tasks/robot/CMakeFiles/test_robot.dir/planar_topology.cpp.o tasks/robot/CMakeFiles/test_robot.dir/robot.cpp.o tasks/robot/CMakeFiles/test_robot.dir/test.cpp.o tasks/robot/CMakeFiles/test_robot.dir/topology.cpp.o tasks/robot/CMakeFiles/test_robot.dir/world.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/robot/CMakeFiles/test_robot.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_robot
+  TARGET_PDB = test_robot.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/robot/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/robot && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/robot/edit_cache: phony tasks/robot/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/robot/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/robot && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/robot/rebuild_cache: phony tasks/robot/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_zip2
+
+
+#############################################
+# Order-only phony target for test_zip2
+
+build cmake_object_order_depends_target_test_zip2: phony || cmake_object_order_depends_target_contrib_catch_main
+
+build tasks/zip2/CMakeFiles/test_zip2.dir/test.cpp.o: CXX_COMPILER__test_zip2_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/zip2/test.cpp || cmake_object_order_depends_target_test_zip2
+  DEP_FILE = tasks/zip2/CMakeFiles/test_zip2.dir/test.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util -I/Users/nika/ead-221-Nika-Prokudina-nika/tasks/zip2 -I/Users/nika/ead-221-Nika-Prokudina-nika/contrib/catch
+  OBJECT_DIR = tasks/zip2/CMakeFiles/test_zip2.dir
+  OBJECT_FILE_DIR = tasks/zip2/CMakeFiles/test_zip2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_zip2
+
+
+#############################################
+# Link the executable test_zip2
+
+build test_zip2: CXX_EXECUTABLE_LINKER__test_zip2_Debug tasks/zip2/CMakeFiles/test_zip2.dir/test.cpp.o | libcontrib_catch_main.a || libcontrib_catch_main.a
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = libcontrib_catch_main.a
+  OBJECT_DIR = tasks/zip2/CMakeFiles/test_zip2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_zip2
+  TARGET_PDB = test_zip2.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/zip2/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/zip2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/zip2/edit_cache: phony tasks/zip2/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/zip2/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/zip2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/zip2/rebuild_cache: phony tasks/zip2/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target image_processor
+
+
+#############################################
+# Order-only phony target for image_processor
+
+build cmake_object_order_depends_target_image_processor: phony || tasks/image_processor/CMakeFiles/image_processor.dir
+
+build tasks/image_processor/CMakeFiles/image_processor.dir/image_processor.cpp.o: CXX_COMPILER__image_processor_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/image_processor/image_processor.cpp || cmake_object_order_depends_target_image_processor
+  DEP_FILE = tasks/image_processor/CMakeFiles/image_processor.dir/image_processor.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util
+  OBJECT_DIR = tasks/image_processor/CMakeFiles/image_processor.dir
+  OBJECT_FILE_DIR = tasks/image_processor/CMakeFiles/image_processor.dir
+
+build tasks/image_processor/CMakeFiles/image_processor.dir/image.cpp.o: CXX_COMPILER__image_processor_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/image_processor/image.cpp || cmake_object_order_depends_target_image_processor
+  DEP_FILE = tasks/image_processor/CMakeFiles/image_processor.dir/image.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util
+  OBJECT_DIR = tasks/image_processor/CMakeFiles/image_processor.dir
+  OBJECT_FILE_DIR = tasks/image_processor/CMakeFiles/image_processor.dir
+
+build tasks/image_processor/CMakeFiles/image_processor.dir/util.cpp.o: CXX_COMPILER__image_processor_Debug /Users/nika/ead-221-Nika-Prokudina-nika/tasks/image_processor/util.cpp || cmake_object_order_depends_target_image_processor
+  DEP_FILE = tasks/image_processor/CMakeFiles/image_processor.dir/util.cpp.o.d
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/nika/ead-221-Nika-Prokudina-nika/util
+  OBJECT_DIR = tasks/image_processor/CMakeFiles/image_processor.dir
+  OBJECT_FILE_DIR = tasks/image_processor/CMakeFiles/image_processor.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target image_processor
+
+
+#############################################
+# Link the executable image_processor
+
+build image_processor: CXX_EXECUTABLE_LINKER__image_processor_Debug tasks/image_processor/CMakeFiles/image_processor.dir/image_processor.cpp.o tasks/image_processor/CMakeFiles/image_processor.dir/image.cpp.o tasks/image_processor/CMakeFiles/image_processor.dir/util.cpp.o
+  FLAGS = -Wall -Werror -Wimplicit-fallthrough -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  OBJECT_DIR = tasks/image_processor/CMakeFiles/image_processor.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = image_processor
+  TARGET_PDB = image_processor.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tasks/image_processor/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/image_processor && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tasks/image_processor/edit_cache: phony tasks/image_processor/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tasks/image_processor/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/image_processor && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/nika/ead-221-Nika-Prokudina-nika -B/Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tasks/image_processor/rebuild_cache: phony tasks/image_processor/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+build contrib_catch_main: phony libcontrib_catch_main.a
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug
+
+build all: phony libcontrib_catch_main.a tasks/multiplication/all tasks/associative_operation/all tasks/palindrome/all tasks/password/all tasks/sort_students/all tasks/admission/all tasks/scorer/all tasks/search/all tasks/tests_checking/all tasks/unixpath/all tasks/word2vec/all tasks/mines/all tasks/scorer2/all tasks/search2/all tasks/unixpath2/all tasks/cow/all tasks/poly/all tasks/robot/all tasks/zip2/all tasks/image_processor/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/admission
+
+build tasks/admission/all: phony test_admission
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/associative_operation
+
+build tasks/associative_operation/all: phony test_associative_operation
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/cow
+
+build tasks/cow/all: phony test_cow
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/image_processor
+
+build tasks/image_processor/all: phony image_processor
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/mines
+
+build tasks/mines/all: phony test_minesweeper
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/multiplication
+
+build tasks/multiplication/all: phony test_multiplication
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/palindrome
+
+build tasks/palindrome/all: phony test_palindrome
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/password
+
+build tasks/password/all: phony test_password
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/poly
+
+build tasks/poly/all: phony test_poly
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/robot
+
+build tasks/robot/all: phony test_robot
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/scorer
+
+build tasks/scorer/all: phony test_scorer
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/scorer2
+
+build tasks/scorer2/all: phony test_scorer2
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/search
+
+build tasks/search/all: phony test_search
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/search2
+
+build tasks/search2/all: phony test_search2
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/sort_students
+
+build tasks/sort_students/all: phony test_sort_students
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/tests_checking
+
+build tasks/tests_checking/all: phony test_tests_checking
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/unixpath
+
+build tasks/unixpath/all: phony test_unixpath
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/unixpath2
+
+build tasks/unixpath2/all: phony test_unixpath2
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/word2vec
+
+build tasks/word2vec/all: phony test_word2vec
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/nika/ead-221-Nika-Prokudina-nika/cmake-build-debug/tasks/zip2
+
+build tasks/zip2/all: phony test_zip2
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/cmake/BuildFlags.cmake /Users/nika/ead-221-Nika-Prokudina-nika/cmake/FindCatch.cmake /Users/nika/ead-221-Nika-Prokudina-nika/cmake/TestSolution.cmake /Users/nika/ead-221-Nika-Prokudina-nika/tasks/admission/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/associative_operation/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/cow/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/image_processor/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/mines/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/multiplication/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/palindrome/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/password/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/poly/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer2/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/search/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/search2/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/sort_students/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/tests_checking/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath2/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/word2vec/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/zip2/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/nika/ead-221-Nika-Prokudina-nika/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/cmake/BuildFlags.cmake /Users/nika/ead-221-Nika-Prokudina-nika/cmake/FindCatch.cmake /Users/nika/ead-221-Nika-Prokudina-nika/cmake/TestSolution.cmake /Users/nika/ead-221-Nika-Prokudina-nika/tasks/admission/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/associative_operation/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/cow/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/image_processor/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/mines/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/multiplication/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/palindrome/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/password/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/poly/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/robot/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/scorer2/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/search/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/search2/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/sort_students/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/tests_checking/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/unixpath2/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/word2vec/CMakeLists.txt /Users/nika/ead-221-Nika-Prokudina-nika/tasks/zip2/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
